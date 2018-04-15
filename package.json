@@ -1,6 +1,6 @@
 {
   "name": "hexo-image-cdn",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Qiniu deployer plugin of Hexo.",
   "main": "index.js",
   "directories": {
