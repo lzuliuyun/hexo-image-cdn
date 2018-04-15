@@ -19,7 +19,6 @@ hexo.extend.filter.register('before_post_render', function(data){
  */
 hexo.extend.filter.register('before_exit', function(data){
   if ((process.argv.indexOf('generate') > -1 || process.argv.indexOf('g') > -1) &&  process.argv.indexOf('cdn') > -1){
-    // qiniuDeployer(hexo.config.qiniu).bind(hexo);
     qiniuDeployer.call(hexo, hexo.config.qiniu);
   }
 });
