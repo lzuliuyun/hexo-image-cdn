@@ -27,6 +27,10 @@ qiniu:
   prefix: ***
   extend: ***
 ```
+3. 生成命令
+```
+hexo g cdn
+```
 
 ## 引用
 * hexo: https://github.com/lzuliuyun/hexo-image-cdn

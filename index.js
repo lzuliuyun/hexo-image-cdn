@@ -1,4 +1,6 @@
 var qiniuDeployer = require('./lib/deployer');
+var prefix_url = hexo.config.qiniu.prefix;
+var extend_url = hexo.config.qiniu.extend;
 
 /**
  * 在文章生成之前，就替换掉所有的image图片标签为七牛云
