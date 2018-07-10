@@ -9,6 +9,7 @@ hexo.extend.filter.register('before_post_render', function(data){
   if ((process.argv.indexOf('generate') > -1 || process.argv.indexOf('g') > -1) &&  process.argv.indexOf('cdn') > -1){
       //根据配置替换路径
       var reg = /!\[(.*)\]\((.*)\)/g;
+      data.cover && !data.cover.match(/www|http/g) && (data.cover = prefix_url + data.cover + extend_url);
       data.content = data.content.replace(reg, '![$1](' +  prefix_url + '$2' + extend_url + ')');
       return data;
   }
